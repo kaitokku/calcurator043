@@ -24,6 +24,7 @@
 		0E4B9BB8163A7B730099D4A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4B9B90163A7B720099D4A2 /* Foundation.framework */; };
 		0E4B9BC0163A7B730099D4A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E4B9BBE163A7B730099D4A2 /* InfoPlist.strings */; };
 		0E4B9BC3163A7B730099D4A2 /* calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B9BC2163A7B730099D4A2 /* calculatorTests.m */; };
+		0EB484E01667284A00E9F2A6 /* calculatorValueStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB484DF1667284A00E9F2A6 /* calculatorValueStateMachine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		0E4B9BBF163A7B730099D4A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E4B9BC1163A7B730099D4A2 /* calculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calculatorTests.h; sourceTree = "<group>"; };
 		0E4B9BC2163A7B730099D4A2 /* calculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorTests.m; sourceTree = "<group>"; };
+		0EB484DE1667284A00E9F2A6 /* calculatorValueStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calculatorValueStateMachine.h; sourceTree = "<group>"; };
+		0EB484DF1667284A00E9F2A6 /* calculatorValueStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calculatorValueStateMachine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				0E4B9BA6163A7B730099D4A2 /* MainStoryboard_iPhone.storyboard */,
 				0E4B9BA9163A7B730099D4A2 /* MainStoryboard_iPad.storyboard */,
 				0E4B9BAC163A7B730099D4A2 /* calculatorViewController.h */,
+				0EB484DE1667284A00E9F2A6 /* calculatorValueStateMachine.h */,
+				0EB484DF1667284A00E9F2A6 /* calculatorValueStateMachine.m */,
 				0E4B9BAD163A7B730099D4A2 /* calculatorViewController.m */,
 				0E4B9B95163A7B720099D4A2 /* Supporting Files */,
 			);
@@ -278,6 +283,7 @@
 				0E4B9B9B163A7B720099D4A2 /* main.m in Sources */,
 				0E4B9B9F163A7B730099D4A2 /* calculatorAppDelegate.m in Sources */,
 				0E4B9BAE163A7B730099D4A2 /* calculatorViewController.m in Sources */,
+				0EB484E01667284A00E9F2A6 /* calculatorValueStateMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +467,7 @@
 				0E4B9BC8163A7B730099D4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E4B9BC9163A7B730099D4A2 /* Build configuration list for PBXNativeTarget "calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				0E4B9BCB163A7B730099D4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
