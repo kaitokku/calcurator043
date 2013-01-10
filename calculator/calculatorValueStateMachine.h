@@ -22,4 +22,8 @@
 
 -(void)Valini:(id)sender controller:(calculatorViewController*)controller;
 
+-(double)ValueInputNAT:(double)NTmp;
+
+-(double)ValueInputDEC:(double)DTmp;
+
 @end

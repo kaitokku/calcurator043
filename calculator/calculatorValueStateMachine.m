@@ -39,25 +39,40 @@
     
     switch ([self state]){
         case Natural:
-            value = value * 10 + Input;
-            if (place <= 8){
-                [controller setTextNatural:value];
-            }
+            value = [self ValueInputNAT:Input];
             break;
             
         case Decimal:
             Dplace--;
-            value = value + Input * pow(10, Dplace);
-            if (place <= 8){
-                [controller setTextDecimal:value];
-            }
+            value = [self ValueInputDEC:Input];
             break;
     }
     
     if (place > 8){
         [controller setTextExponent:value];
+    }else if(place <= 8){
+        switch ([self state]) {
+            case Natural:
+                [controller setTextNatural:value];
+                break;
+                
+            case Decimal:
+                [controller setTextDecimal:value];
+                break;
+        }
     }
+    return;
 }
+
+-(double)ValueInputNAT:(double)NTmp{
+    return value * 10 + NTmp;
+}
+
+-(double)ValueInputDEC:(double)DTmp{
+    return value + DTmp * pow(10, Dplace);
+}
+
+
 
 -(void)Valini:(id)sender controller:(calculatorViewController*)controller{
     place = 0;
