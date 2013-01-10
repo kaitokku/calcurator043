@@ -9,6 +9,7 @@
 #import "calculatorViewController.h"
 
 #define DecMark -1
+#define CulMark -2
 
 @interface calculatorViewController ()
 

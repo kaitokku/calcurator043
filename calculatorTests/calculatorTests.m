@@ -7,8 +7,10 @@
 //
 
 #import "calculatorTests.h"
+#import "calculatorViewController.h"
 
 @implementation calculatorTests
+
 
 - (void)setUp
 {
@@ -26,7 +28,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in calculatorTests");
+
 }
 
 @end
