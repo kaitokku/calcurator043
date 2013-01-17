@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E34AC4616A7CE3D009B75E6 /* MockcalculatorViewContoroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34AC4516A7CE3D009B75E6 /* MockcalculatorViewContoroller.m */; };
 		0E4B9B8F163A7B720099D4A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4B9B8E163A7B720099D4A2 /* UIKit.framework */; };
 		0E4B9B91163A7B720099D4A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4B9B90163A7B720099D4A2 /* Foundation.framework */; };
 		0E4B9B93163A7B720099D4A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4B9B92163A7B720099D4A2 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E34AC4416A7CE3D009B75E6 /* MockcalculatorViewContoroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockcalculatorViewContoroller.h; sourceTree = "<group>"; };
+		0E34AC4516A7CE3D009B75E6 /* MockcalculatorViewContoroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockcalculatorViewContoroller.m; sourceTree = "<group>"; };
 		0E4B9B8A163A7B720099D4A2 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4B9B8E163A7B720099D4A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0E4B9B90163A7B720099D4A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +162,8 @@
 				0E4B9BC2163A7B730099D4A2 /* calculatorTests.m */,
 				0E8B862A169E80A400341CF5 /* calculatorValueStateMachineTests.h */,
 				0E8B862B169E80A400341CF5 /* calculatorValueStateMachineTests.m */,
+				0E34AC4416A7CE3D009B75E6 /* MockcalculatorViewContoroller.h */,
+				0E34AC4516A7CE3D009B75E6 /* MockcalculatorViewContoroller.m */,
 				0E4B9BBC163A7B730099D4A2 /* Supporting Files */,
 			);
 			path = calculatorTests;
@@ -298,6 +303,7 @@
 			files = (
 				0E4B9BC3163A7B730099D4A2 /* calculatorTests.m in Sources */,
 				0E8B862C169E80A400341CF5 /* calculatorValueStateMachineTests.m in Sources */,
+				0E34AC4616A7CE3D009B75E6 /* MockcalculatorViewContoroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

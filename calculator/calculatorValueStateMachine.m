@@ -64,6 +64,7 @@
     return;
 }
 
+
 -(double)ValueInputNAT:(double)Tvalue NTmp:(double)NTmp{
     return Tvalue * 10 + NTmp;
 }
@@ -71,7 +72,6 @@
 -(double)ValueInputDEC:(double)Tvalue DTmp:(double)DTmp TDplace:(int)TDplace{
     return Tvalue + DTmp * pow(10, TDplace);
 }
-
 
 
 -(void)Valini:(id)sender controller:(calculatorViewController*)controller{
