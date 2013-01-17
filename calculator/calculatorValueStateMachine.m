@@ -39,12 +39,12 @@
     
     switch ([self state]){
         case Natural:
-            value = [self ValueInputNAT:Input];
+            value = [self ValueInputNAT:value NTmp:Input];
             break;
             
         case Decimal:
             Dplace--;
-            value = [self ValueInputDEC:Input];
+            value = [self ValueInputDEC:value DTmp:Input TDplace:Dplace];
             break;
     }
     
@@ -64,12 +64,12 @@
     return;
 }
 
--(double)ValueInputNAT:(double)NTmp{
-    return value * 10 + NTmp;
+-(double)ValueInputNAT:(double)Tvalue NTmp:(double)NTmp{
+    return Tvalue * 10 + NTmp;
 }
 
--(double)ValueInputDEC:(double)DTmp{
-    return value + DTmp * pow(10, Dplace);
+-(double)ValueInputDEC:(double)Tvalue DTmp:(double)DTmp TDplace:(int)TDplace{
+    return Tvalue + DTmp * pow(10, TDplace);
 }
 
 

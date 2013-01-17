@@ -8,16 +8,18 @@
 
 #import "calculatorValueStateMachineTests.h"
 #import "calculatorValueStateMachine.h"
-
+#import "calculatorViewController.h"
 
 
 @implementation calculatorValueStateMachineTests
 
-calculatorValueStateMachine* stateMachine;
+calculatorValueStateMachine* e;
 
 - (void)setUp
 {
     [super setUp];
+    
+    e = [[calculatorValueStateMachine alloc]init];
     
     // Set-up code here.
 }
@@ -28,6 +30,7 @@ calculatorValueStateMachine* stateMachine;
     
     [super tearDown];
 }
+
 
 /*
 - (void)testExample
@@ -73,5 +76,23 @@ calculatorValueStateMachine* stateMachine;
     [[self label] setText:[NSString stringWithFormat:@"%e",exp]];
 }
 */
+
+-(void)testNaturalValue
+{
+    double inputN = 2.0;
+    double value = 0.0;
+    double output = [e ValueInputNAT:value NTmp:inputN];
+    STAssertEqualsWithAccuracy(2.0, output, 0.00001, @"Natural error");
+}
+
+-(void)testDecimalValue
+{
+    double inputD = 2.0;
+    double value = 0.0;
+    int Dplace = -1;
+    double output = [e ValueInputDEC:value DTmp:inputD TDplace:Dplace];
+    STAssertEqualsWithAccuracy(0.2, output, 0.00001, @"Decimal error");
+}
+
 
 @end
