@@ -49,5 +49,16 @@ calculatorValueStateMachine* e;
     STAssertEqualsWithAccuracy(0.2, output, 0.00001, @"Decimal error");
 }
 
+- (void)testSetStateToNatural
+{
+    [e setState:Natural];
+    STAssertEquals(Natural, [e state], @"state is not Hello");
+}
+
+- (void)testSetStateToDecimal
+{
+    [e setState:Decimal];
+    STAssertEquals(Decimal, [e state], @"state is not Hello");
+}
 
 @end
