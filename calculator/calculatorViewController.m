@@ -95,7 +95,7 @@
 }
 
 - (IBAction)clear:(id)sender {
-    NSLog(@"pushedC");
+    [Vmodel Clear:(id)sender controller:self];
 }
 
 - (IBAction)ClearAll:(id)sender {

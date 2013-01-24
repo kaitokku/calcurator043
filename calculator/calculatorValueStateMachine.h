@@ -12,7 +12,7 @@
 
 @interface calculatorValueStateMachine : NSObject
 {
-    int place, Dplace;
+    int place, Dplace, PushedEq, PushedCul;
     double value, buff;
 }
 
@@ -27,6 +27,8 @@
 -(void)ChangeCalcuType:(char)InputCalcu controller:(calculatorViewController*)controller;
 
 -(void)PushEqual:(calculatorViewController *)controller;
+
+-(void)Clear:(id)sender controller:(calculatorViewController*)controller;
 
 -(void)Valini:(id)sender controller:(calculatorViewController*)controller;
 
