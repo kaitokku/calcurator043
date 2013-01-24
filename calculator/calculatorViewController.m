@@ -77,7 +77,7 @@
 }
 
 - (IBAction)decimal:(id)sender {
-    [Vmodel ChangeValueType:DecMark controller:self];
+    [Vmodel ChangeToDecimal:self];
 }
 
 - (IBAction)addition:(id)sender {

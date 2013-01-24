@@ -20,6 +20,8 @@
 
 -(void)ChangeValueType:(char)Input controller:(calculatorViewController*)controller;
 
+-(void)ChangeToDecimal:(calculatorViewController*)controller;
+
 -(void)Valini:(id)sender controller:(calculatorViewController*)controller;
 
 -(double)ValueInputNAT:(double)Tvalue NTmp:(double)NTmp;

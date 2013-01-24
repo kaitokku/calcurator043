@@ -21,13 +21,6 @@
         return;
     }
     
-    //小数点が入力された場合
-    if (Input == -1){
-        [self setState:Decimal];
-        [controller setTextDecimal:value];
-        return;
-    }
-    
     //演算子が入力された場合
     if(Input == -2 && value != NAN){
         buff = value;
@@ -61,6 +54,13 @@
                 break;
         }
     }
+    return;
+}
+
+//小数点が入力された時に値を整数から小数に変更する
+-(void)ChangeToDecimal:(calculatorViewController*)controller{
+    [self setState:Decimal];
+    [controller setTextDecimal:value];
     return;
 }
 
