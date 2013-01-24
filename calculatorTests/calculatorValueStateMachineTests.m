@@ -88,7 +88,7 @@ MockcalculatorViewContoroller* mock;
  Decimal 状態の時に A メソッドを呼び出す(CAを押す)テスト
  */
  
-- (void)testAllClearDEC
+- (void)testClearAllDEC
 {
     [stateMachine setState:Decimal];
     [mock setWillDEC:false];

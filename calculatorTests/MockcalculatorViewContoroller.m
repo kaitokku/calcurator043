@@ -40,14 +40,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setTextDecimal
+- (void)setTextDecimal:(double)dec
 {
     STAssertTrue(willDEC, @"unexpected setTextDecimal called.");
     if(willDEC)
         done = true;
 }
 
-- (void)setTextNatural
+- (void)setTextNatural:(double)nat
 {
     STAssertTrue(willNAT, @"unexpected setTextNatural called.");
     if(willNAT)
