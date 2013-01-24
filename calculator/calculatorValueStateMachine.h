@@ -16,11 +16,17 @@
     double value, buff;
 }
 
-@property enum State {Natural, Decimal} state;
+@property enum {Natural, Decimal} valstate;
+
+@property enum {DEF, ADD, SUB, MUL, DIV} calstate;
 
 -(void)ChangeValueType:(char)Input controller:(calculatorViewController*)controller;
 
 -(void)ChangeToDecimal:(calculatorViewController*)controller;
+
+-(void)ChangeCalcuType:(char)InputCalcu controller:(calculatorViewController*)controller;
+
+-(void)PushEqual:(calculatorViewController *)controller;
 
 -(void)Valini:(id)sender controller:(calculatorViewController*)controller;
 

@@ -8,9 +8,6 @@
 
 #import "calculatorViewController.h"
 
-#define DecMark -1
-#define CulMark -2
-
 @interface calculatorViewController ()
 
 @end
@@ -23,7 +20,8 @@
 {
     [super viewDidLoad];
     Vmodel = [[calculatorValueStateMachine alloc] init];
-    [Vmodel setState:Natural];
+    [Vmodel setValstate:Natural];
+    [Vmodel setCalstate:DEF];
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -81,19 +79,19 @@
 }
 
 - (IBAction)addition:(id)sender {
-
+    [Vmodel ChangeCalcuType:'+' controller:self];
 }
 
 - (IBAction)subtraction:(id)sender {
-    NSLog(@"pushedSub");
+    [Vmodel ChangeCalcuType:'-' controller:self];
 }
 
 - (IBAction)multiplication:(id)sender {
-    NSLog(@"pushedMul");
+    [Vmodel ChangeCalcuType:'*' controller:self];
 }
 
 - (IBAction)division:(id)sender {
-    NSLog(@"pushedDiv");
+    [Vmodel ChangeCalcuType:'/' controller:self];
 }
 
 - (IBAction)clear:(id)sender {
@@ -106,7 +104,7 @@
 }
 
 - (IBAction)equal:(id)sender {
-    NSLog(@"pushedEq");
+    [Vmodel PushEqual:self];
 }
 
 
